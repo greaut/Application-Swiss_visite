@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{887A60D6-9173-4164-A850-3E143565542C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Swiss_visite</RootNamespace>
+    <AssemblyName>Swiss_visite</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\stsig\Desktop\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>26FEF0B47F3CCB119199C7F700318D3FA9963425</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Swiss_visite_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB_GSB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_GSB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Accueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Accueil.Designer.cs">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CompteRendus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CompteRendus.Designer.cs">
+      <DependentUpon>CompteRendus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Connexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Connexion.Designer.cs">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Medicaments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Medicaments.Designer.cs">
+      <DependentUpon>Medicaments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Praticiens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Praticiens.Designer.cs">
+      <DependentUpon>Praticiens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Visiteurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Visiteurs.Designer.cs">
+      <DependentUpon>Visiteurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\GSB_Collaborateur_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GSB_Collaborateur_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\GSB_CompteRendus.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GSB_CompteRendus.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\GSB_Medicaments_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GSB_Medicaments_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\GSB_Praticien_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GSB_Praticien_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\GSB_Motif.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GSB_Motif.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Accueil.resx">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CompteRendus.resx">
+      <DependentUpon>CompteRendus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Connexion.resx">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Error.resx">
+      <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Medicaments.resx">
+      <DependentUpon>Medicaments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Praticiens.resx">
+      <DependentUpon>Praticiens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Visiteurs.resx">
+      <DependentUpon>Visiteurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="DB_GSB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DB_GSB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="Datasets\GSB_Collaborateur_DataSet.xsc">
+      <DependentUpon>GSB_Collaborateur_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\GSB_Collaborateur_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GSB_Collaborateur_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\GSB_Collaborateur_DataSet.xss">
+      <DependentUpon>GSB_Collaborateur_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\GSB_CompteRendus.xsc">
+      <DependentUpon>GSB_CompteRendus.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\GSB_CompteRendus.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GSB_CompteRendus.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\GSB_CompteRendus.xss">
+      <DependentUpon>GSB_CompteRendus.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\GSB_Medicaments_DataSet.xsc">
+      <DependentUpon>GSB_Medicaments_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\GSB_Medicaments_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GSB_Medicaments_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\GSB_Medicaments_DataSet.xss">
+      <DependentUpon>GSB_Medicaments_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\GSB_Praticien_DataSet.xsc">
+      <DependentUpon>GSB_Praticien_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\GSB_Praticien_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GSB_Praticien_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\GSB_Praticien_DataSet.xss">
+      <DependentUpon>GSB_Praticien_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\GSB_Motif.xsc">
+      <DependentUpon>GSB_Motif.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\GSB_Motif.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GSB_Motif.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\GSB_Motif.xss">
+      <DependentUpon>GSB_Motif.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\ConnectDBGSB.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Swiss_visite_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
